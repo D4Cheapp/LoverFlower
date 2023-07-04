@@ -6,5 +6,6 @@
         <li>React</li>
         <li>Webpack</li>
         <li>Sass</li>
+        <li>Redux</li>
     </ul>
 </body>

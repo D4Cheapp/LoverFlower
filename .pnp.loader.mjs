@@ -1,4 +1,3 @@
-/* eslint-disable */
 import { fileURLToPath, pathToFileURL, URL as URL$1 } from 'url';
 import fs from 'fs';
 import path from 'path';
