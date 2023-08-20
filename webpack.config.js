@@ -5,7 +5,7 @@ const path = require('path');
 module.exports = {
   mode: 'development',
   entry: {
-    main: path.resolve(__dirname, './src/index.jsx'),
+    main: path.resolve(__dirname, './src/index.tsx'),
   },
   optimization: {
     runtimeChunk: 'single',
@@ -24,14 +24,14 @@ module.exports = {
     path: path.resolve(__dirname, 'docs'),
   },
   resolve: {
-    extensions: ['.ts', '.jsx', '.js', '.json'],
+    extensions: ['.ts', '.tsx', '.jsx', '.js', '.json'],
   },
   module: {
     rules: [
       {
-        test: /\.(js|jsx)$/,
+        test: /\.(js|jsx|ts|tsx)$/,
         exclude: /node_modules/,
-        use: ['babel-loader'],
+        use: ['babel-loader', 'ts-loader'],
       },
       {
         test: /\.(scss|css)$/,
@@ -42,7 +42,7 @@ module.exports = {
           {
             loader: 'sass-loader',
             options: {
-              additionalData: '@import "src/style.scss";',
+              additionalData: '@import "src/scss/style.scss";',
               sourceMap: true,
             },
           },

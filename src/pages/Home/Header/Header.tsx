@@ -1,8 +1,8 @@
 import React from 'react';
-import style from './Header.module.scss';
 import clsx from 'clsx';
+import style from './Header.module.scss';
 
-function Header() {
+function Header(): React.ReactElement {
   return (
     <header>
       <h1 className={style.title}>Lover</h1>

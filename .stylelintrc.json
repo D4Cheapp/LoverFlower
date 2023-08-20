@@ -1,0 +1,19 @@
+{
+  "extends": [
+    "stylelint-config-standard"
+  ],
+  "rules": {
+    "at-rule-no-unknown": null,
+    "import-notation": null,
+    "selector-class-pattern": "^[a-z][a-zA-Z0-9]+$",
+    "selector-pseudo-class-no-unknown": [
+      true,
+      {
+        "ignorePseudoClasses": [
+          "global",
+          "local"
+        ]
+      }
+    ]
+  }
+}

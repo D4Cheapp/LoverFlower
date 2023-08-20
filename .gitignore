@@ -26,7 +26,7 @@ build/Release
 dist
 
 # Dependency directory
-../Book-List/node_modules
+node_modules
 
 # Optional npm cache directory
 .npm
