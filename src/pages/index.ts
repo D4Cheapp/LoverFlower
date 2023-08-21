@@ -1,1 +1,13 @@
 export { Home } from './Home';
+export { Catalog } from './Catalog';
+export { Search } from './Search';
+export { Bouquet } from './Bouquet';
+export { Order } from './Order';
+export { SuccessOrder } from './SuccessOrder';
+export { OrderError } from './OrderError';
+export { Delivery } from './Delivery';
+export { About } from './About';
+export { Business } from './Business';
+export { Contacts } from './Contacts';
+export { ErrorPage } from './ErrorPage';
+export { FAQ } from './FAQ';
