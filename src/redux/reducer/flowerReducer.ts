@@ -1,18 +1,17 @@
-import { createSlice, PayloadAction } from '@reduxjs/toolkit';
-
-interface InitialStateInterface {
-  errors: string[],
-}
+import { createSlice } from '@reduxjs/toolkit';
 
 const flowerSlice = createSlice({
   name: 'flowerSlice',
-  initialState: { errors: [] } as InitialStateInterface,
+  initialState: { cart: [], isCartMenuActive: false },
   reducers: {
-    setErrorState(state, errors: PayloadAction<string[]>) {
-      state.errors = errors.payload;
-    }
+    setCartMenuState(state, isCartMenuActive: { payload: boolean }): void {
+      document.body.style.overflowY = isCartMenuActive.payload
+        ? 'hidden'
+        : 'scroll';
+      state.isCartMenuActive = isCartMenuActive.payload;
+    },
   },
 });
 
-export const { setErrorState } = flowerSlice.actions;
+export const { setCartMenuState } = flowerSlice.actions;
 export default flowerSlice.reducer;
