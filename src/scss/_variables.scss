@@ -2,4 +2,13 @@ $black: #040A0A;
 $aquamarine: #43FFD2;
 $murrey: #7D2253;
 $thulianPink: #D978AC;
-$white: #FFFFFF;
+$white: #FFF;
+
+@mixin imageButton($url) {
+  border: none;
+  cursor: pointer;
+  background-image: url($url);
+  background-color: transparent;
+  background-repeat: no-repeat;
+  background-size: cover;
+}

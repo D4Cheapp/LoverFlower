@@ -1,0 +1,49 @@
+nav.nav {
+  position: absolute;
+  width: calc(100% - 22vw);
+  height: 80px;
+  padding-inline: 11vw;
+  display: inline-flex;
+  justify-content: space-between;
+  align-items: center;
+
+  h1.mobileLogo {
+    text-align: center;
+    font-family: Cormorant, serif;
+    font-weight: 300;
+    font-size: 25px;
+    margin: 0;
+
+    @media (width <= 800px) {
+      font-size: 20px;
+    }
+  }
+
+  button.sideMenu {
+    width: 24px;
+    height: 15px;
+    margin: 15px;
+
+    @include imageButton("../../images/navbar/side-menu.svg");
+
+    @media (width <= 800px) {
+      width: 20px;
+      height: 11px;
+    }
+  }
+
+  @media (width <= 1200px) {
+    align-items: center;
+    justify-content: space-between;
+  }
+}
+
+
+nav.alt {
+  background-color: black;
+}
+
+
+nav.sticky {
+  position: fixed;
+}
