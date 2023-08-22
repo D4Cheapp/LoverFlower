@@ -1,0 +1,45 @@
+div.links {
+  display: inline-flex;
+  align-items: center;
+
+  button.logo {
+    width: 34px;
+    height: 75px;
+    margin-right: 70px;
+
+    @include imageButton("../../../../images/navbar/logo.svg");
+  }
+}
+
+
+div.linkContainer {
+  height: 100%;
+  display: inline-flex;
+  align-items: center;
+  gap: 50px;
+}
+
+
+div.searchContainer {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+
+  button.lens {
+    width: 18px;
+    aspect-ratio: 1/1;
+
+    @include imageButton("../../../../images/navbar/lens.svg");
+  }
+}
+
+
+a.link {
+  text-decoration: none;
+  color: $white;
+  font-size: 16px;
+
+  @media (width <= 1440px) {
+    font-size: 14px;
+  }
+}

@@ -4,9 +4,8 @@ import { HistoryRouter } from 'redux-first-history/rr6';
 import { Provider } from 'react-redux';
 import { history, store } from '../../redux/store';
 import { routerType } from '../../router';
-import { NavigationBar } from '../NavigationBar';
+import { Navbar } from '../Navbar';
 import { Footer } from '../Footer';
-import { ErrorContainer } from '../ErrorContainer';
 
 interface AppInterface {
   router: routerType[];
@@ -16,8 +15,7 @@ function App({ router }: AppInterface): React.ReactElement {
   return (
     <Provider store={store}>
       <HistoryRouter history={history}>
-        <ErrorContainer />
-        <NavigationBar />
+        <Navbar />
         <Routes>
           {router.map((page: routerType) => (
             <Route key={page.path} path={page.path} element={page.element} />

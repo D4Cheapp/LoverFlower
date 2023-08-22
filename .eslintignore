@@ -12,3 +12,4 @@ README.md
 tsconfig.json
 webpack.config.js
 yarn.lock
+src/redux/reducer/flowerReducerindex.ts

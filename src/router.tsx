@@ -26,7 +26,7 @@ export const router: routerType[] = [
     element: <Home />,
   },
   {
-    path: '/сatalog',
+    path: '/catalog',
     element: <Catalog />,
   },
   {

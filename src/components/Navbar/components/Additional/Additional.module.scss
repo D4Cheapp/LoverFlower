@@ -1,0 +1,33 @@
+div.additionalContainer {
+  display: inline-flex;
+  gap: 20px;
+}
+
+
+div.contactPhone {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+
+  button.phone {
+    width: 20px;
+    height: 20px;
+
+    @include imageButton("../../../../images/navbar/phone.svg");
+
+    @media (width <= 1440px) {
+      width: 18px;
+      height: 18px;
+    }
+  }
+
+  a.phoneNumber {
+    text-decoration: none;
+    color: $aquamarine;
+    font-size: 16px;
+
+    @media (width <= 1440px) {
+      font-size: 14px;
+    }
+  }
+}

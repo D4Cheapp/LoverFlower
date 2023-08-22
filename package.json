@@ -5,7 +5,7 @@
   "scripts": {
     "start": "webpack-dev-server",
     "deploy": "gh-pages -d docs",
-    "build": "webpack --mode=production --define-process-env-node-env=production",
+    "build": "webpack --mode production",
     "lint": "npm run lint:js && yarn lint:style",
     "lint:js": "eslint ./src --ext .js,.jsx,.ts,.tsx",
     "lint:js:fix": "eslint ./src --ext .js,.jsx,.ts,.tsx --fix",
@@ -16,7 +16,7 @@
     "> 1%",
     "last 2 versions"
   ],
-  "license": "ISC",
+  "license": "MIT",
   "devDependencies": {
     "@babel/core": "^7.22.9",
     "@babel/eslint-parser": "^7.22.9",
@@ -56,7 +56,6 @@
     "postcss": "^8.4.27",
     "postcss-loader": "^7.3.3",
     "prettier": "^3.0.0",
-    "prop-types": "^15.8.1",
     "query-string": "^8.1.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
@@ -77,6 +76,7 @@
     "svgo": "^3.0.2",
     "ts-loader": "^9.4.4",
     "typescript": "^5.1.6",
+    "url-loader": "^4.1.1",
     "web-vitals": "^3.4.0",
     "webp-loader": "^0.6.0",
     "webpack": "^5.88.2",

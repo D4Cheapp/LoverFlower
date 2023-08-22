@@ -1,3 +1,4 @@
+const ImageMinimizerPlugin = require('image-minimizer-webpack-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 const path = require('path');
@@ -6,9 +7,6 @@ module.exports = {
   mode: 'development',
   entry: {
     main: path.resolve(__dirname, './src/index.tsx'),
-  },
-  optimization: {
-    runtimeChunk: 'single',
   },
   stats: {
     children: true,
@@ -25,6 +23,24 @@ module.exports = {
   },
   resolve: {
     extensions: ['.ts', '.tsx', '.jsx', '.js', '.json'],
+  },
+  optimization: {
+    runtimeChunk: 'single',
+    minimizer: [
+      new ImageMinimizerPlugin({
+        minimizer: {
+          implementation: ImageMinimizerPlugin.imageminMinify,
+          options: {
+            plugins: [
+              ['gifsicle', { interlaced: true }],
+              ['jpegtran', { progressive: true }],
+              ['optipng', { optimizationLevel: 5 }],
+              ['svgo', { name: 'preset-default' }],
+            ],
+          },
+        },
+      }),
+    ],
   },
   module: {
     rules: [
@@ -59,20 +75,10 @@ module.exports = {
       },
       {
         test: /\.(jpg|png|svg|ico|webp)$/,
-        use: [
-          {
-            loader: 'file-loader',
-            options: {
-              name: '[path]/[name].[ext]',
-            },
-          },
-          {
-            loader: 'webp-loader',
-            options: {
-              quality: 70,
-            },
-          },
-        ],
+        type: 'asset/resource',
+        generator: {
+          filename: ('[path]/[name].[ext]'),
+        },
       },
     ],
   },

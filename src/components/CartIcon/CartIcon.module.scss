@@ -1,0 +1,53 @@
+div.cartIcon {
+  position: relative;
+  padding: 15px;
+  height: fit-content;
+  border-radius: 10px;
+  background: rgb(0 0 0 / 20%);
+  backdrop-filter: blur(10px);
+
+  button.cart {
+    width: 22px;
+    height: 20px;
+
+    @include imageButton("../../images/navbar/cart.svg");
+
+    @media (width <= 1440px) {
+      width: 18px;
+      height: 16px;
+    }
+  }
+
+  p.cartCount {
+    position: absolute;
+    top: 12px;
+    right: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    font-size: 12px;
+    color: $black;
+    margin: 0;
+    background-color: $aquamarine;
+
+    @media (width <= 1200px) {
+      top: 1px;
+      right: 8px;
+      font-size: 8px;
+      width: 13px;
+      height: 13px;
+    }
+
+    @media (width <= 800px) {
+      top: 2px;
+      right: 9px;
+    }
+  }
+
+  @media (width <= 800px) {
+    padding: 11px;
+  }
+}
