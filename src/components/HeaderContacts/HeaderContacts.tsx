@@ -1,22 +1,21 @@
 import React from 'react';
-import style from '../Navbar/Navbar.module.scss';
-// import style from './HeaderContacts.module.scss';
+import styles from './HeaderContacts.module.scss';
 
 function HeaderContacts(): React.ReactElement {
   return (
-    <div className={style.contactsContainer}>
-      <div className={style.contact}>
-        <a className={style.additionalLink} href="mailto:zakaz@loverflower.by">
+    <div className={styles.contactsContainer}>
+      <div className={styles.contact}>
+        <a className={styles.additionalLink} href="mailto:zakaz@loverflower.by">
           zakaz@loverflower.by
         </a>
-        <p className={style.description}>
+        <p className={styles.description}>
           Доставка 24/7 по договоренности с оператором
         </p>
       </div>
 
-      <div className={style.contact}>
-        <p className={style.additionalLink}>ул. Тимирязева 67</p>
-        <p className={style.description}>
+      <div className={styles.contact}>
+        <p className={styles.additionalLink}>ул. Тимирязева 67</p>
+        <p className={styles.description}>
           10:00 до 21:00 <br />
           без выходных
         </p>
