@@ -3,7 +3,7 @@ import { useLocation } from 'react-router';
 import { useSelector } from 'react-redux';
 import { Location } from 'history';
 import clsx from 'clsx';
-import style from './Navbar.module.scss';
+import styles from './Navbar.module.scss';
 import { SideMenu, Links, Additional, CartMenu } from './components';
 import { AppState } from '../../redux/store/store';
 
@@ -52,14 +52,14 @@ function Navbar(): React.ReactElement {
       {isSideMenuActice && <SideMenu />}
       <nav
         className={clsx(
-          style.nav,
-          { [style.alt]: isAlt || isSticky },
-          { [style.sticky]: isSticky }
+          styles.nav,
+          { [styles.alt]: isAlt || isSticky },
+          { [styles.sticky]: isSticky }
         )}
       >
         {isMobile && (
           <button
-            className={style.sideMenu}
+            className={styles.sideMenu}
             type="button"
             onClick={onSideMenuClick}
           />
@@ -68,7 +68,7 @@ function Navbar(): React.ReactElement {
         {!isMobile && <Links />}
 
         {isMobile && (location.pathname !== '/' || isSticky) && (
-          <h1 className={style.mobileLogo}>
+          <h1 className={styles.mobileLogo}>
             LOVER <br />
             FLOWER
           </h1>

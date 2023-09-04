@@ -1,5 +1,5 @@
 import React from 'react';
-import style from './Additional.module.scss';
+import styles from './Additional.module.scss';
 import { CartIcon } from '../../../CartIcon';
 
 function Additional({ isMobile }: { isMobile: boolean }): React.ReactElement {
@@ -8,15 +8,15 @@ function Additional({ isMobile }: { isMobile: boolean }): React.ReactElement {
   };
 
   return (
-    <div className={style.additionalContainer}>
+    <div className={styles.additionalContainer}>
       {!isMobile && (
-        <div className={style.contactPhone}>
+        <div className={styles.contactPhone}>
           <button
             type="button"
-            className={style.phone}
+            className={styles.phone}
             onClick={onPhoneClick}
           />
-          <a href="tel:+375291136969" className={style.phoneNumber}>
+          <a href="tel:+375291136969" className={styles.phoneNumber}>
             +375 (29) 113-69-69
           </a>
         </div>

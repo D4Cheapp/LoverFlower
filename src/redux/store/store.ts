@@ -1,4 +1,3 @@
-// eslint-disable-next-line import/no-unresolved
 import { CurriedGetDefaultMiddleware } from '@reduxjs/toolkit/dist/getDefaultMiddleware';
 import { configureStore } from '@reduxjs/toolkit';
 import { createReduxHistoryContext } from 'redux-first-history';
