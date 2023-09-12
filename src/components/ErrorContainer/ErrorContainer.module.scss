@@ -1,0 +1,20 @@
+div.container {
+  position: absolute;
+  z-index: 100;
+  display: inline-flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+  top: 0;
+  left: 0;
+  width: 60%;
+  margin-inline: 20%;
+  height: fit-content;
+  gap: .5em;
+  margin-top: 1em;
+  overflow: hidden;
+
+  @media screen and (width <= 600px) {
+    height: 10vh;
+  }
+}

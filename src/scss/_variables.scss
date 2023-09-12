@@ -1,5 +1,44 @@
-$black: #040A0A;
 $aquamarine: #43FFD2;
 $murrey: #7D2253;
+$oldRose: #d37577;
 $thulianPink: #D978AC;
-$white: #FFFFFF;
+$black: #040A0A;
+$davysGray: #555;
+$white: #FFF;
+
+
+@mixin imageButton($url) {
+  border: none;
+  cursor: pointer;
+  background-image: url($url);
+  background-color: transparent;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+
+@mixin cross($width, $thick) {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &::after {
+    content: '';
+    position: absolute;
+    width: $width;
+    height: $thick;
+    rotate: -45deg;
+    background-color: $white;
+    transition: .2s;
+  }
+
+  &::before {
+    content: '';
+    position: absolute;
+    width: $width;
+    height: $thick;
+    rotate: 45deg;
+    background-color: $white;
+    transition: .2s;
+  }
+}

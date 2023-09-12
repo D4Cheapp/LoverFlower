@@ -9,11 +9,17 @@ const { createReduxHistory, routerMiddleware, routerReducer } =
     history: createHashHistory(),
   });
 
+const reducer = combineReducers({
+  flower: flowerReducer,
+  router: routerReducer,
+});
+
 const store = configureStore({
-  reducer: combineReducers({ flower: flowerReducer, router: routerReducer }),
+  reducer,
   middleware: getDefaultMiddleware =>
     getDefaultMiddleware().concat(routerMiddleware),
 });
 
 export default store;
+export type AppState = ReturnType<typeof reducer>;
 export const history = createReduxHistory(store);
