@@ -1,0 +1,82 @@
+{
+  "flowers": [
+    {
+      "id": 0,
+      "title": "РУБИНОВЫЕ ИСКРЫ",
+      "price": 4784,
+      "image": "https://i.postimg.cc/MHYzLQgk/ruby-sparks.png"
+    },
+    {
+      "id": 1,
+      "title": "СТАБИЛЬНАЯ ЛАВАНДА",
+      "price": 7200,
+      "image": "https://i.postimg.cc/8CFQ9B4v/stabilized-lavender.png"
+    },
+    {
+      "id": 2,
+      "title": "ОЧАРОВАНИЕ НЕЖНОСТИ",
+      "price": 9990,
+      "image": "https://i.postimg.cc/CxxVHVfm/bouquet-charm-of-tenderness.png"
+    },
+    {
+      "id": 3,
+      "title": "БУКЕТ СЬЕРА РОЗ",
+      "price": 1200,
+      "image": "https://i.postimg.cc/HsHmnMWG/bouquet-of-bush-sierra-roses.png"
+    },
+    {
+      "id": 4,
+      "title": "БУКЕТ МАЛИНОВЫХ РОЗ",
+      "price": 2500,
+      "image": "https://i.postimg.cc/650XvQT8/bouquet-of-crimson-roses.png"
+    },
+    {
+      "id": 5,
+      "title": "БУКЕТ ГЛАДИОЛУСОВ",
+      "price": 5990,
+      "image": "https://i.postimg.cc/25JmSXyT/bouquet-of-gladioli.png"
+    },
+    {
+      "id": 6,
+      "title": "БУКЕТ КРАСНЫХ РОЗ",
+      "price": 1200,
+      "image": "https://i.postimg.cc/3NjH98Bb/bouquet-of-red-roses.png"
+    },
+    {
+      "id": 7,
+      "title": "БУКЕТ БЕЛЫХ РОЗ",
+      "price": 1500,
+      "image": "https://i.postimg.cc/VN5m1cfd/bouquet-of-white-roses-with-greenery.png"
+    },
+    {
+      "id": 8,
+      "title": "БУКЕТ ГОРТЕНЗИИ",
+      "price": 9990,
+      "image": "https://i.postimg.cc/QtTD9kWD/bouquet-with-hydrangea.png"
+    },
+    {
+      "id": 9,
+      "title": "БУКЕТ ГОРТЕНЗИИ И ЭУСТОМЫ",
+      "price": 1500,
+      "image": "https://i.postimg.cc/Bbf0xLxK/bouquet-with-hydrangea-and-eustoma.png"
+    },
+    {
+      "id": 10,
+      "title": "БУКЕТ 'YELLOW BABY'",
+      "price": 2500,
+      "image": "https://i.postimg.cc/TPZM6LN4/bouquet-yellow-baby.png"
+    },
+    {
+      "id": 11,
+      "title": "КОМПОЗИЦИЯ ЖЕРМИНИИ И РОЗ",
+      "price": 5990,
+      "image": "https://i.postimg.cc/SxswY7wP/composition-of-germini-and-roses.png"
+    },
+    {
+      "id": 12,
+      "title": "БУКЕТ ЛАВАНДЫ ДЛЯ ТВОРЧЕСТВА",
+      "price": 1200,
+      "image": "https://i.postimg.cc/vZ2w0SrM/lavender-bouquet-for-creativity.png"
+    }
+  ]
+}
